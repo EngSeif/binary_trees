@@ -1,0 +1,21 @@
+#include "binary_trees.h"
+
+/**
+ * binary_tree_delete - Delete A Tree
+ *
+ * @tree: Tree To Be Deleted
+ * Return: New Node or Null if Fails
+ */
+
+void binary_tree_delete(binary_tree_t *tree)
+{
+	if (!tree)
+		return;
+
+	if (tree->left)
+		binary_tree_delete(tree->left);
+	if (tree->right)
+		binary_tree_delete(tree->right);
+
+	free(tree);
+}
