@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_height - Move PostOrder
+ * binary_tree_height - Node Height
  *
  * @tree: Tree To Be Passed
  * Return: Height
